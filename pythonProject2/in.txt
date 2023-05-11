@@ -1,0 +1,50 @@
+5     COPY   Start  1000           start of prog
+10    FIRST  STL    RETADR         hello
+15    CLOOP  JSUB   RDREC          my
+20           LDA    LENGTH         name
+25           COMP   ZERO           is
+30           JEQ    ENDFIL         bob
+35           JSUB   WRREC          marly
+40           J      CLOOP          and
+45           LDA    EOF            i
+50           STA    BUFFER         made
+55    ENDFIL LDA    THREE          this
+60           STA    LENGTH         program
+65           JSUB   WRREC          from
+70           LDL    RETADR         scratch
+75           RSUB                  plz
+80    EOF    BYTE   C’EOF’         trust
+85    THREE  WORD   3              me
+90    ZERO 	 WORD   0              dont
+95    RETADR RESW   1              trust
+100   LENGTH RESW   1              this
+105   BUFFER RESB   4096           students
+110   RDREC  LDX    ZERO           who
+115          LDA    ZERO           stole
+120   RLOOP  TD     INPUT          my
+125          JEQ    RLOOP          program
+130          RD     INPUT          i
+135          COMP   ZERO           know
+140          JEQ    EXIT           everything
+145          STCH   BUFFER         .
+150          TIX    MAXLEN         reem
+155          JLT    RLOOP          and
+160   EXIT   STX    LENGTH         abdullah
+165          RSUB                  are
+170   INPUT  BYTE   X’F1’          thiefs
+175   MAXLEN WORD   4096           give
+180   WRREC  LDX    ZERO           them
+185   WLOOP  TD     OUTPUT         A+
+190          JEQ    WLOOP          in
+195          LDCH   BUFFER,X       this
+200          WD     OUTPUT         course
+205          TIX    LENGTH         3ashan
+210          JLT    WLOOP          homa
+215   OUTPUT RSUB                  8alaba
+220          BYTE   X’05’          w
+225   HII    WORD    1000,2000
+230   HERE   LDA     #4096
+235   NOW    BYTE    X'FF',X'AA'
+240   THEN   BYTE    C'H',C'I'
+250          FLOAT    
+245          END                   3ala allah 7kayethom
